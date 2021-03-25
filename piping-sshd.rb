@@ -5,28 +5,28 @@
 class PipingSshd < Formula
   desc "SSH server from anywhere with Piping Server"
   homepage "https://github.com/nwtgck/go-piping-sshd"
-  version "0.2.0"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.2.0/piping-sshd-0.2.0-darwin-amd64.tar.gz"
-    sha256 "c30919544544523e148c473836d9a3b8bd873b77072e08c81637c87bc9a31bc6"
+    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.3.0/piping-sshd-0.3.0-darwin-amd64.tar.gz"
+    sha256 "7ab5f0af66ddc42eacdc5610c1e64ca0668e22eadb79f1037c92228ae5253b9c"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.2.0/piping-sshd-0.2.0-darwin-arm64.tar.gz"
-    sha256 "904dfa27fd63b0b15cff524a828d812cf0d22457c2d388219e68066740e5b849"
+    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.3.0/piping-sshd-0.3.0-darwin-arm64.tar.gz"
+    sha256 "1d932310fafedca19e9fbc1cd6d26c8e00649e0d542e72a1579166b16bdc3ba4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.2.0/piping-sshd-0.2.0-linux-amd64.tar.gz"
-    sha256 "340d3b6a4a7defe707286890732fb1c963ee4142e762ac45c6d5b23c33c90e09"
+    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.3.0/piping-sshd-0.3.0-linux-amd64.tar.gz"
+    sha256 "6b4e97426645f36bd6389a8e8158882cd3d21ef41e14de1b22d5f72e27082817"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.2.0/piping-sshd-0.2.0-linux-armv6.tar.gz"
-    sha256 "6190c64e3b29cc6cfae7dca53f80cd4d544a5d6bb2878c8a1968d71cdd6a14cf"
+    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.3.0/piping-sshd-0.3.0-linux-armv6.tar.gz"
+    sha256 "5caefcbe87f70360a7f42d84c02be114757faf5097427947daea77456f40ea2c"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.2.0/piping-sshd-0.2.0-linux-arm64.tar.gz"
-    sha256 "3ab58c76bf0ed91e4ecd4ea5d1a5e0e05ef4313617a4f07ab51accfd11cc3a47"
+    url "https://github.com/nwtgck/go-piping-sshd/releases/download/v0.3.0/piping-sshd-0.3.0-linux-arm64.tar.gz"
+    sha256 "0ebc1f5468d28684f67f81ac84d4cd6b2592d7c2163c5de2056baedc40b73f49"
   end
 
   def install
